@@ -21,7 +21,7 @@ const battery = () => {
 
       // Battery charging change
       battery.addEventListener('chargingchange', () => {
-        updateChargingInfo;
+        updateChargingInfo();
       });
 
       function updateChargingInfo() {
