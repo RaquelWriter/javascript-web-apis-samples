@@ -1,0 +1,29 @@
+* {
+  margin: 0 auto;
+  align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.battery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  border: 2px black solid;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, 0.2);
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  padding: 2em;
+}
