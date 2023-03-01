@@ -16,11 +16,9 @@ Download the zip and unzip. Open index.html in your browser.
 
 ## battery-status folder
 
-With this project you can check the battery status of your computer, using only the web api object battery from navigation method web api built in the browser.
+With this project you can check the battery status of your computer, using only the Battery Status Web Api from navigation method of the browser.
 
 Sample code:
-
-...
 
 ```javascript
 let batteryIsCharging = false;
@@ -28,11 +26,10 @@ let batteryIsCharging = false;
 navigator.getBattery().then((battery) => {
   batteryIsCharging = battery.charging;
 
-  battery.addEventListener("chargingchange", () => {
+  battery.addEventListener('chargingchange', () => {
     batteryIsCharging = battery.charging;
   });
 });
-...
 ```
 
 ## More info about Navigator.getBattery() method.
