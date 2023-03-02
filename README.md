@@ -2,7 +2,7 @@
 
 # About The WEB APIS SAMPLES WITH JAVASCRIPT
 
-This is a sample code for showing the consuming web apis with Vanilla Javascript.
+This is a sample code for showing the consuming web apis (battery status API and localStorage) with Vanilla Javascript.
 
 ### Built With
 
@@ -12,7 +12,9 @@ Javascript, HTML5, CSS.
 
 ## Getting Started
 
-Download the zip and unzip. Open index.html in your browser.
+Download the zip and unzip.
+
+There are two folders. Open the index.html of each project in your browser.
 
 ## battery-status folder
 
@@ -77,4 +79,4 @@ localStorage.clear();
 
 ### More info about Window.localStorage()
 
-[MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+[Window.localStorage()](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
