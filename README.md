@@ -14,7 +14,7 @@ Javascript, HTML5, CSS.
 
 Download the zip and unzip.
 
-There are two folders. Open the index.html of each project in your browser.
+There are two folders. Open the index.html of each project in your browser
 
 ## battery-status folder
 
