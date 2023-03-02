@@ -3,8 +3,21 @@ const buttonEl = document.querySelector('#delete');
 const outputEl = document.querySelector('#list-container');
 const form = document.querySelector('form');
 
-//Add todo and save it into local storage
+// Remove Todo
+const clearTodo = (id) => {
+  console.log(id);
+  let todos;
+  if (localStorage.getItem('todos') === null) {
+    todos = [];
+  } else {
+    todos = JSON.parse(localStorage.getItem('todos', todos));
+  }
+  todos = todos.filter((todo) => todo.id !== Number(id));
+  localStorage.setItem('todos', JSON.stringify(todos));
+  getTodos();
+};
 
+//Add todo and save it into local storage
 // Get todos
 const getTodos = () => {
   let todos;
@@ -19,7 +32,7 @@ const getTodos = () => {
     return `
           <li id="item">
             <span>${todo.title}</span>
-            <button id="delete">X</button>
+            <button id="delete" onclick="clearTodo('${todo.id}')" }>X</button>
           </li>
     `;
   });
@@ -42,15 +55,13 @@ const addTodo = (e) => {
     } else {
       todos = JSON.parse(localStorage.getItem('todos'));
     }
-    todos.push({ id: Date.now(), title: todoInput });
+    todos.unshift({ id: Date.now(), title: todoInput });
     // Save to local Storage
     localStorage.setItem('todos', JSON.stringify(todos));
+    inputEl.value = ''; // empty input
   }
+  getTodos();
 };
-
-//const result = localStorage.getItem('name');
-
-// Remove
 
 //localStorage.removeItem('name');
 
