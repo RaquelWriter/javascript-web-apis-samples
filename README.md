@@ -32,6 +32,49 @@ navigator.getBattery().then((battery) => {
 });
 ```
 
-## More info about Navigator.getBattery() method.
+### More info about Navigator.getBattery() method.
 
 [Navigator.getBattery()](https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API)
+
+## localstorage folder
+
+The localStorage read-only property of the window interface allows you to access a Storage object for the Document's origin; the stored data is saved across browser sessions.
+
+Sample code:
+
+```javascript
+let todos;
+if (localStorage.getItem('todos') === null) {
+  todos = [];
+} else {
+  todos = JSON.parse(localStorage.getItem('todos'));
+}
+```
+
+Get item from the storage:
+
+```javascript
+localStorage.getItem('todos');
+```
+
+Set item (add data to the local storage):
+
+```javascript
+localStorage.setItem('todos', 'Go to gym');
+```
+
+Remove item:
+
+```javascript
+localStorage.removeItem('todos');
+```
+
+Remove all localStorage:
+
+```javascript
+localStorage.clear();
+```
+
+### More info about Window.localStorage()
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
