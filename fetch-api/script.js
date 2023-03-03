@@ -19,7 +19,7 @@ const fetchBlogs = async () => {
   }
 };
 
-fetchBlogs();
+btn.addEventListener('click', fetchBlogs);
 
 const formatDataIntoDOM = (data) => {
   let allData;
