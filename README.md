@@ -2,7 +2,7 @@
 
 # About The WEB APIS SAMPLES WITH JAVASCRIPT
 
-This is a sample code for showing the consuming web apis (battery status API and localStorage) with Vanilla Javascript.
+This is a sample code for showing the consuming web apis (battery status API, localStorage API and fetch API) with Vanilla Javascript.
 
 ### Built With
 
