@@ -18,7 +18,7 @@ There are two folders. Open the index.html of each project in your browser.
 
 ## battery-status folder
 
-With this project you can check the battery status of your computer, using only the Battery Status Web Api from navigation method of the browser.
+With this project you can check the battery status of your computer, using only the Battery Status Web Api from navigation method of the browser. Documentation: [Navigator.getBattery()](https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API)
 
 Sample code:
 
@@ -34,13 +34,9 @@ navigator.getBattery().then((battery) => {
 });
 ```
 
-### More info about Navigator.getBattery() method.
-
-[Navigator.getBattery()](https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API)
-
 ## localstorage folder
 
-The localStorage read-only property of the window interface allows you to access a Storage object for the Document's origin; the stored data is saved across browser sessions.
+The localStorage read-only property of the window interface allows you to access a Storage object for the Document's origin; the stored data is saved across browser sessions. Documentation: [Window.localStorage()](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage),
 
 Sample code:
 
@@ -77,16 +73,12 @@ Remove all localStorage:
 localStorage.clear();
 ```
 
-### More info about Window.localStorage()
-
-[Window.localStorage()](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
-
 ## fetch-api folder
 
 Fetch demo in vanilla JS to fetch the data from [JSON Placeholder](https://jsonplaceholder.typicode.com/) of fake blogs.
 You can use also another APIs like [RapidAPI](https://rapidapi.com/).
 
-The details of the position can be fetched from a positionstack API: [Position Stack API](https://positionstack.com/). For this project, there is no request to this API. The sample code for that could be:
+The details of the position can be fetched from: [Position Stack API](https://positionstack.com/). For this project, there is no request to this API. The sample code for that could be:
 
 ```javascript
 const getInfoGeolocation = async (lat, long) => {
