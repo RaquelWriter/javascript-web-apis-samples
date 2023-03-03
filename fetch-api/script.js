@@ -7,16 +7,19 @@ const btn = document.querySelector('#btn');
 // 1. Get the endpoint of the server/api
 const url = 'https://jsonplaceholder.typicode.com/posts';
 
-fetch(url)
-  .then((res) => {
-    res.json().then((data) => {
-      console.log(data);
-      formatDataIntoDOM(data);
-    });
-  })
-  .catch((err) => {
-    console.log('ERROR: ', err);
-  });
+const fetchBlogs = async () => {
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    formatDataIntoDOM(data);
+  } catch {
+    (error) => {
+      console.log('ERROR: ', error);
+    };
+  }
+};
+
+fetchBlogs();
 
 const formatDataIntoDOM = (data) => {
   let allData;
